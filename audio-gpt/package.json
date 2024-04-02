@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "start:vercel": "node ./src/index.js",
   },
   "author": "",
   "license": "ISC",
