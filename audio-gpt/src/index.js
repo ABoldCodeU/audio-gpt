@@ -14,7 +14,7 @@ const openai = new OpenAIApi({
 const app = express();
 
 // Definir el puerto del servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 // Configurar los middleware
 app.use(morgan('dev')); // Mostrar las peticiones HTTP en la consola
