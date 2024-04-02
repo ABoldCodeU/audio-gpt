@@ -26,7 +26,7 @@ app.get('api/', async (req, res) => {
     res.json({ message: 'Bienvenido a la API REST Chat Bot' });
 });
 
-app.get('api//convertTextToAudio', async (req, res) => {
+app.get('api/convertTextToAudio', async (req, res) => {
     try {
         const model = req.query.model
         const voice = req.query.voice
