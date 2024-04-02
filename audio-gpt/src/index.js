@@ -22,11 +22,11 @@ app.use(cors()); // Habilitar el intercambio de recursos entre dominios
 app.use(express.json()); // Parsear el cuerpo de las peticiones en formato JSON
 
 // Crear las rutas de la API
-app.get('/', async (req, res) => {
+app.get('api/', async (req, res) => {
     res.json({ message: 'Bienvenido a la API REST Chat Bot' });
 });
 
-app.get('/convertTextToAudio', async (req, res) => {
+app.get('api//convertTextToAudio', async (req, res) => {
     try {
         const model = req.query.model
         const voice = req.query.voice
